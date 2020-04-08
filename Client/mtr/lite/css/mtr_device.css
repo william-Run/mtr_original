@@ -1,0 +1,188 @@
+.gowellbg {
+	background: url(../../assets/images/gowell/72dpi/homepage/bg.png) no-repeat;
+}
+
+.top-pic {
+	background: url(../../assets/images/gowell/72dpi/homepage/top.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.xc {
+	width: 120px;
+	margin: 0 auto;
+	text-align: center;
+	background: url(../../assets/images/gowell/72dpi/homepage/bg.png) no-repeat;
+}
+
+button.device {
+	outline: 0;
+	border: 0;
+}
+
+button.poweroff {
+	background: url(../../assets/images/gowell/72dpi/others/b-off.png) no-repeat;
+	width: 100px;
+	height: 40px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.poweron {
+	background: url(../../assets/images/gowell/72dpi/others/b-on.png) no-repeat;
+	width: 100px;
+	height: 40px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.lightoff {
+	background: url(../../assets/images/gowell/72dpi/others/l-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.lighton {
+	background: url(../../assets/images/gowell/72dpi/others/l-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.stop {
+	background: url(../../assets/images/gowell/72dpi/player/s01.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.brightoff {
+	background: url(../../assets/images/gowell/72dpi/others/k7-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.brighton {
+	background: url(../../assets/images/gowell/72dpi/others/k7-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.darkoff {
+	background: url(../../assets/images/gowell/72dpi/others/k8-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.darkon {
+	background: url(../../assets/images/gowell/72dpi/others/k8-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.volume, button.brightness {
+	background: url(../../assets/images/gowell/72dpi/homepage/bg.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.meetoff {
+	background: url(../../assets/images/gowell/72dpi/others/m1-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.meeton {
+	background: url(../../assets/images/gowell/72dpi/others/m1-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.screenoff {
+	background: url(../../assets/images/gowell/72dpi/others/m2-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.screenon {
+	background: url(../../assets/images/gowell/72dpi/others/m2-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.addmodeloff {
+	background: url(../../assets/images/gowell/72dpi/others/m3-off.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+button.addmodelon {
+	background: url(../../assets/images/gowell/72dpi/others/m3-on.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: 100% 100%;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#deleteModal {
+	background: url(../../assets/images/gowell/72dpi/homepage/bg.png) no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

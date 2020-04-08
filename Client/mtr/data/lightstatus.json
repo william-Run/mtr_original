@@ -1,0 +1,15 @@
+{
+	"success":true,
+	"errCode":0,
+	"errMsg":null,
+	"data":{
+		"powerStatus":1,
+		"powerOn":true,
+		"vallid":true,
+		"brightness":70,
+		"lightsource1":101,
+		"lightsource2":101,
+		"lightsource3":101,
+		"lightsource4":101
+	}
+}

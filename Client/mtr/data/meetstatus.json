@@ -1,0 +1,11 @@
+{
+	"success":true,
+	"errCode":0,
+	"errMsg":null,
+	"data":{
+		"powerStatus":1,
+		"powerOn":false,
+		"vallid":true,
+		"brightness":70
+	}
+}

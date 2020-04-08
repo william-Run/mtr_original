@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Favicon icon -->
+		<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/gowell/72dpi/gwlogo/l-bs.png">
+		<title>GO-WELL中控系统</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- chartist CSS -->
+		<link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+		<link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+		<link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+		<!--This page css - Morris CSS -->
+		<link href="../assets/plugins/c3-master/c3.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- You can change the theme colors from here -->
+		<link href="css/colors/blue.css" id="theme" rel="stylesheet">
+		<link href="css/mtr_device.css" rel="stylesheet">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body class="fix-header fix-sidebar card-no-border">
+		<!-- ============================================================== -->
+		<!-- Preloader - style you can find in spinners.css -->
+		<!-- ============================================================== -->
+		<div class="preloader gowellbg">
+			<svg class="circular" viewBox="25 25 50 50">
+				<circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+			</svg>
+		</div>
+		<!-- ============================================================== -->
+		<!-- Main wrapper - style you can find in pages.scss -->
+		<!-- ============================================================== -->
+		<div id="main-wrapper">
+			<!-- ============================================================== -->
+			<!-- Topbar header - style you can find in pages.scss -->
+			<!-- ============================================================== -->
+			<header class="topbar top-pic">
+				<nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+					<!-- ============================================================== -->
+					<!-- Logo -->
+					<!-- ============================================================== -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="index.html">
+							<!-- Logo icon -->
+							<b>
+							<!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+							<!-- Light Logo icon -->
+							<img src="../assets/images/gowell/72dpi/gwlogo/l-bs.png" height="35" alt="homepage" class="light-logo" />
+						</b>
+							<!--End Logo icon -->
+							<!-- Logo text -->
+							<span>
+							<!-- Light Logo text -->
+							<img src="../assets/images/gowell/72dpi/gwlogo/l-bl.png" height="35" class="light-logo" alt="homepage" />
+						</span>
+						</a>
+					</div>
+					<!-- ============================================================== -->
+					<!-- End Logo -->
+					<!-- ============================================================== -->
+					<div class="navbar-collapse">
+						<!-- ============================================================== -->
+						<!-- toggle and nav items -->
+						<!-- ============================================================== -->
+						<ul class="navbar-nav mr-auto mt-md-0">
+							<!-- This is  -->
+							<li class="nav-item">
+								<span class="nav-link hidden-sm-down" style="color: white;"><strong>高威科益云信息系统(上海)有限公司</strong></span>
+							</li>
+							<li class="nav-item">
+								<span class="nav-link hidden-md-up" style="color: white;"><strong>高威科益云</strong></span>
+							</li>
+						</ul>
+						<!-- ============================================================== -->
+						<!-- User profile and search -->
+						<!-- ============================================================== -->
+						<ul class="navbar-nav my-lg-0">
+							<li class="nav-item dropdown" style="padding: 20px">
+								<div id="tp-weather-widget" class="xc"></div>
+							</li>
+							<!-- ============================================================== -->
+							<!-- Profile -->
+							<!-- ============================================================== -->
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="mdi mdi-calendar-clock"></i>
+								</a>
+								<div id="datepanel" class="dropdown-menu dropdown-menu-right text-center card-block xc">
+									<span style="color: #00AFDB;">&nbsp;</span>
+									<hr class="divider">
+									<span style="color: #00AFDB;">&nbsp;</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- ============================================================== -->
+			<!-- End Topbar header -->
+			<!-- ============================================================== -->
+			<!-- ============================================================== -->
+			<!-- Page wrapper  -->
+			<!-- ============================================================== -->
+			<div class="page-wrapper gowellbg">
+				<!-- ============================================================== -->
+				<!-- Container fluid  -->
+				<!-- ============================================================== -->
+				<div class="container-fluid">
+					<!-- ============================================================== -->
+					<!-- Bread crumb and right sidebar toggle -->
+					<!-- ============================================================== -->
+					<div class="row page-titles gowellbg">
+						<div class="col-md-12 col-12 align-self-center">
+							<h3 class="text-themecolor">设置</h3>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a href="javascript:void(0)">中控系统</a>
+								</li>
+								<li class="breadcrumb-item active">设置</li>
+							</ol>
+						</div>
+					</div>
+					<!-- ============================================================== -->
+					<!-- End Bread crumb and right sidebar toggle -->
+					<!-- ============================================================== -->
+					<!-- ============================================================== -->
+					<!-- Start Page Content -->
+					<!-- ============================================================== -->
+					<!-- Row -->
+					<div class="row">
+						<!-- Column -->
+						<div class="col-lg-12 col-xlg-12 col-md-12">
+							<div class="card gowellbg">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs profile-tab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" data-toggle="tab" href="#switch-page" role="tab" style="text-align: center;">常用开关</a>
+										<!--hidden-sm-down-->
+										<!--<a class="nav-link active hidden-md-up" data-toggle="tab" href="#switch-page" role="tab">常用<br/>开关</a>-->
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#light-page" role="tab">灯光</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#projector-page" role="tab">投影</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#curtain-page" role="tab">幕布</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#glass-page" role="tab">玻璃</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" data-toggle="tab" href="#pattern-page" role="tab" style="text-align: center;">情景模式</a>
+										<!--hidden-sm-down-->
+										<!--<a class="nav-link hidden-md-up" data-toggle="tab" href="#pattern-page" role="tab">情景<br/>模式</a>-->
+									</li>
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane active" id="switch-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-12 col-xs-12">
+													<strong>一键开关</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-M0 switch" value="M0"></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>大屏</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-S1 monitor" value="S1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>投影</strong>
+													<br>
+													<button type="button" id="another" class="btn poweroff device device-P1 projector switchall another" value="P1"></button>
+													<!--id="projector"-->
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>灯光</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-L0 lamp switchall" value="L0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6">
+													<strong>玻璃</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G0 glass switchall" value="G0"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--second tab-->
+									<div class="tab-pane" id="light-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-3 col-xs-3 b-r">
+													<strong>总开关</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-L0 lamp switchall" value="L0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>大会议室</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-L0 lamp switchgroup switchgroup-1" value="L0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>小会议室</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-L0 lamp switchgroup switchgroup-2" value="L0"></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>大厅中灯</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-L1 lamp switchone" value="L1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>大厅侧灯</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-L2 lamp switchone" value="L2"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>小厅中灯</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-L3 lamp switchone" value="L3"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6">
+													<strong>小厅侧灯</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-L4 lamp switchone" value="L4"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--third tab-->
+									<div class="tab-pane" id="projector-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-6 col-6">
+													<strong>开关</strong>
+													<br>
+													<button type="button" id="originone" class="btn poweroff device device-P1 projector switchall" value="P1"></button>
+												</div>
+												<div class="col-md-6 col-6">
+													<strong>静音</strong>
+													<br>
+													<button type="button" class="btn poweron device device-P1 projector mute switchone" value="P1"></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>增大</strong>
+													<br>
+													<button type="button" class="btn brightoff device device-P1 projector volumeup switchone" value="P1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>减小</strong>
+													<br>
+													<button type="button" class="btn darkoff device device-P1 projector volumedown switchone" value="P1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>音量</strong>
+													<br>
+													<button type="button" class="btn device-P1 volume"><span style="color: #00AFDB;font-size:24px;"></span></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>增亮</strong>
+													<br>
+													<button type="button" class="btn brightoff device device-P1 projector brightup switchone" value="P1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>减亮</strong>
+													<br>
+													<button type="button" class="btn darkoff device device-P1 projector brightdown switchone" value="P1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>亮度</strong>
+													<br>
+													<button type="button" class="btn device-P1 brightness"><span style="color: #00AFDB;font-size:24px;"></span></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--fourth tab-->
+									<div class="tab-pane" id="curtain-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-3 col-sm-3 b-r">
+													<strong>上</strong>
+													<br>
+													<button type="button" class="btn brighton device device-C1 curtain rollup" value="C1"></button>
+												</div>
+												<!--<div class="col-md-3 col-sm-3 b-r">
+													<strong>停</strong>
+													<br>
+													<button type="button" class="btn stop device device-C1 curtain rollstop" value="C1"></button>
+												</div>-->
+												<div class="col-md-3 col-sm-3 b-r">
+													<strong>下</strong>
+													<br>
+													<button type="button" class="btn darkon device device-C1 curtain rolldown" value="C1"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--fifth tab-->
+									<div class="tab-pane" id="glass-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>开关</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G0 glass switchall" value="G0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>大会议室</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G1 glass switchone" value="G1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>小会议室</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G6 glass switchone" value="G6"></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>特效1：全透—全雾</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G0 glass special special-1" value="G0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>特效2：单片—循环</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G0 glass special special-2" value="G0"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6">
+													<strong>特效3：奇偶—循环</strong>
+													<br>
+													<button type="button" class="btn poweroff device device-G0 glass special special-3" value="G0"></button>
+												</div>
+											</div>
+											<!--<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃1</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G1 glass switchone" value="G1"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃2</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G2 glass switchone" value="G2"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃3</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G3 glass switchone" value="G3"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6">
+													<strong>玻璃4</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G4 glass switchone" value="G4"></button>
+												</div>
+											</div>
+											<hr>
+											<div class="row">
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃5</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G5 glass switchone" value="G5"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃6</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G6 glass switchone" value="G6"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<strong>玻璃7</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G7 glass switchone" value="G7"></button>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 ">
+													<strong>玻璃8</strong>
+													<br>
+													<button type="button" class="btn lightoff device device-G8 glass switchone" value="G8"></button>
+												</div>
+											</div>-->
+										</div>
+									</div>
+									<!--six tab-->
+									<div class="tab-pane" id="pattern-page" role="tabpanel">
+										<div class="card-block">
+											<div class="row">
+												<div class="col-md-4 col-sm-4 col-6 b-r">
+													<strong>大会议室</strong>
+												</div>
+												<div class="col-md-4 col-sm-4 col-6 b-r">
+													<strong>小会议室</strong>
+												</div><div class="col-md-4 col-sm-4 col-6 b-r">
+													<strong>全场景</strong>
+												</div>
+											</div>
+											<hr />
+											<div class="row">
+												
+												<div class="col-md-4 col-sm-4 col-6 b-r" id="bigone">
+													
+													<!--<div class="col-md-3 col-sm-6 col-6">
+														<button type="button" class="btn meetoff modelonoff"></button>
+														<br>
+														<a class="btn" data-toggle="modal" data-target="#settings"><strong>会议/影音</strong></a>
+													</div>
+													<br>
+													<div class="col-md-3 col-sm-6 col-6">
+														<button type="button" class="btn meetoff modelonoff"></button>
+														<br>
+														<a class="btn" data-toggle="modal" data-target="#settings"><strong>关闭模式</strong></a>
+													</div>-->
+												</div>
+												<div class="col-md-4 col-sm-4 col-6 b-r" id="smallone">
+													
+												</div>
+												<div class="col-md-4 col-sm-4 col-6 b-r" id="allone">
+													
+												</div>
+											</div>
+											<hr/>
+											<!--<div class="col-md-3 col-sm-6 col-6 b-r">
+													<button type="button" class="btn meetoff modelonoff"></button>
+													<br>
+													<a class="btn" data-toggle="modal" data-target="#settings"><strong>会议模式</strong></a>
+												</div>
+												<div class="col-md-3 col-sm-6 col-6 b-r">
+													<button type="button" class="btn meetoff modelonoff"></button>
+													<br>
+													<a class="btn" data-toggle="modal" data-target="#settings"><strong>投影模式</strong></a>
+												</div>-->
+											<!--<div class="row" id="add">
+												<div id="add-model" class="col-md-4 col-sm-4 col-6 b-r">
+													<button type="button" class="btn addmodeloff add-model" data-toggle="modal" data-target="#settings" onmouseover="lightImg(this)" onmouseout="darkImg(this)"></button>
+													<br>
+													<a class="btn" data-toggle="modal" data-target="#settings"><strong>自定义</strong></a>
+												</div>
+											</div>-->
+										</div>
+										<!-- 模态框 -->
+										<div class="modal fade " id="settings">
+											<div class="modal-dialog">
+												<div class="modal-content gowellbg">
+
+													<!-- 模态框头部 -->
+													<div class="modal-header">
+														<input type="text" class="form-control gowellbg" placeholder="自定义" id="txt">
+														<button type="button" class="close" data-dismiss="modal">&times;</button>
+													</div>
+
+													<!-- 模态框主体 -->
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-md-6 col-xs-6">
+																<strong>大屏</strong>
+																<br>
+																<button type="button" class="btn  poweroff settings-monitor"></button>
+															</div>
+														</div>
+														<hr>
+														<div class="row" id="settings-lamp">
+															<div class="col-md-3 col-sm-6 col-6 b-r">
+																<strong>大厅中灯</strong>
+																<br>
+																<button type="button" class="btn lightoff settings-big-center"></button>
+															</div>
+															<div class="col-md-3 col-sm-6 col-6 b-r">
+																<strong>大厅侧灯</strong>
+																<br>
+																<button type="button" class="btn lightoff settings-big-side"></button>
+															</div>
+															<div class="col-md-3 col-sm-6 col-6 b-r">
+																<strong>小厅中灯</strong>
+																<br>
+																<button type="button" class="btn lightoff settings-small-center"></button>
+															</div>
+															<div class="col-md-3 col-sm-6 col-6">
+																<strong>小厅侧灯</strong>
+																<br>
+																<button type="button" class="btn lightoff settings-small-side"></button>
+															</div>
+														</div>
+														<hr>
+														<div class="row">
+															<div class="col-md-6 col-xs-6 col-6 b-r">
+																<strong>投影</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-projector"></button>
+															</div>
+															<div class="col-md-6 col-xs-6 col-6 b-r">
+																<strong>幕布跟随投影</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-curtain"></button>
+															</div>
+														</div>
+														<hr>
+														<div class="row">
+															<div class="col-md-6 col-sm-6 col-6 b-r">
+																<strong>雾化开关</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-glass"></button>
+															</div>
+															<div class="col-md-6 col-sm-6 col-6 b-r">
+																<strong>特效1</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-special-1"></button>
+															</div>
+														</div>
+														<hr>
+														<div class="row">
+															<div class="col-md-6 col-sm-6 col-6 b-r">
+																<strong>特效2</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-special-2"></button>
+															</div>
+															<div class="col-md-6 col-sm-6 col-6">
+																<strong>特效3</strong>
+																<br>
+																<button type="button" class="btn poweroff settings-special-3"></button>
+															</div>
+														</div>
+													</div>
+													<!-- 模态框底部 -->
+													<div class="modal-footer">
+														<div class="col-md-4 col-sm-4 b-r">
+															<button type="remove" class="btn delete" data-toggle="modal" data-target="#deleteModal">删除</button>
+														</div>
+
+														<!-- 模态框 -->
+														<div class="modal fade " id="deleteModal">
+															<div class="modal-dialog modal-sm">
+																<div class="modal-content ">
+
+																	<!-- 模态框头部 -->
+																	<div class="modal-header">
+																		<h4 class="modal-title "><strong>删除</strong></h4>
+																		<button type="button" class="close" data-dismiss="modal">&times;</button>
+																	</div>
+
+																	<!-- 模态框主体 -->
+																	<div class="modal-body">
+																		<div class="modal-body ">
+																			<strong>确认删除？</strong>
+																		</div>
+																	</div>
+
+																	<!-- 模态框底部 -->
+																	<div class="modal-footer" style="text-align: center;">
+																		<div class="col-md-4 col-sm-4 ">
+																			<button type="button" class="btn btn-secondary re-delete" data-dismiss="modal">确认</button>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="col-md-4 col-sm-4 b-r">
+															<button type="reset" class="btn btn-secondary reset">重置</button>
+														</div>
+														<div class="col-md-4 col-sm-4 ">
+															<button type="button" class="btn btn-secondary save" data-dismiss="modal">保存</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ============================================================== -->
+				<!-- End Page Content -->
+				<!-- ============================================================== -->
+			</div>
+			<!-- ============================================================== -->
+			<!-- End Container fluid  -->
+			<!-- ============================================================== -->
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Page wrapper  -->
+		<!-- ============================================================== -->
+		</div>
+		<!-- ============================================================== -->
+		<!-- End Wrapper -->
+		<!-- ============================================================== -->
+		<!-- ============================================================== -->
+		<!-- All Jquery -->
+		<!-- ============================================================== -->
+		<script src="../assets/plugins/jquery/jquery.min.js"></script>
+		<!-- Bootstrap tether Core JavaScript -->
+		<script src="../assets/plugins/bootstrap/js/tether.min.js"></script>
+		<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- slimscrollbar scrollbar JavaScript -->
+		<script src="js/jquery.slimscroll.js"></script>
+		<!--Wave Effects -->
+		<script src="js/waves.js"></script>
+		<!--Menu sidebar -->
+		<script src="js/sidebarmenu.js"></script>
+		<!--stickey kit -->
+		<script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+		<!--Custom JavaScript -->
+		<script src="js/custom.min.js"></script>
+		<!-- ============================================================== -->
+		<!-- This page plugins -->
+		<!-- ============================================================== -->
+		<!--c3 JavaScript -->
+		<script src="../assets/plugins/d3/d3.min.js"></script>
+		<script src="../assets/plugins/c3-master/c3.min.js"></script>
+		<script src="js/mtr_device.js"></script>
+		<script src="js/mtr_mode.js"></script>
+		<script>
+			//https://blog.csdn.net/emsoc/article/details/84764858
+			(function(T, h, i, n, k, P, a, g, e) {
+				g = function() {
+					P = h.createElement(i);
+					a = h.getElementsByTagName(i)[0];
+					P.src = k;
+					P.charset = "utf-8";
+					P.async = 1;
+					a.parentNode.insertBefore(P, a)
+				};
+				T["ThinkPageWeatherWidgetObject"] = n;
+				T[n] || (T[n] = function() {
+					(T[n].q = T[n].q || []).push(arguments)
+				});
+				T[n].l = +new Date();
+				if(T.attachEvent) {
+					T.attachEvent("onload", g)
+				} else {
+					T.addEventListener("load", g, false)
+				}
+			}(window, document, "script", "tpwidget", "//widget.thinkpage.cn/widget/chameleon.js"))
+		</script>
+		<script>
+			function showTime() {
+				var curTime = new Date();
+				$("#datepanel > span:first").html(curTime.getFullYear() + "/" + (curTime.getMonth() + 1) + "/" + curTime.getDate());
+				$("#datepanel > span:last").html(curTime.getHours() + ":" + curTime.getMinutes() + ":" + curTime.getSeconds());
+				setTimeout(showTime, 1000);
+			}
+
+			$(document).ready(function() {
+				showTime();
+				tpwidget("init", {
+					"flavor": "slim",
+					//"location": "WX4FBXXFKE4F",
+					"location": "WW0V9QP93VS8",
+					//"geolocation": "disabled",
+					"geolocation": "enabled",
+					"language": "zh-chs",
+					"unit": "c",
+					"theme": "chameleon",
+					"container": "tp-weather-widget",
+					"bubble": "enabled",
+					"alarmType": "badge",
+					//"color": "#F47837",
+					"color": "#00AFDB",
+					//"uid": "U605DCADA4",
+					"uid": "U2425E6098",
+					//"hash": "78f46a1198d54dafa0cda717efa717a9"
+					"hash": "53ae1c1f0c18b4fa03958642dbe88ffe"
+				});
+				tpwidget("show");
+
+				deviceManager.init();
+			});
+		</script>
+	</body>
+
+</html>
